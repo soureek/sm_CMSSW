@@ -91,7 +91,7 @@ void BTagSkimMC::globalEndJob(const BTagSkimMCCount::Counters* count) {
                                  << std::endl;
 }
 
-void BTagSkimMC::fillDescriptions(edm::ConfigurationDescriptions &descriptions) {
+void BTagSkimMC::fillDescriptions(edm::ConfigurationDescriptions& descriptions) {
   edm::ParameterSetDescription desc;
   descriptions.addWithDefaultLabel(desc);
 }

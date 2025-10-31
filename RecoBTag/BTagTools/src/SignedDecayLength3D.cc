@@ -78,7 +78,7 @@ TrajectoryStateOnSurface SignedDecayLength3D::closestApproachToJet(const FreeTra
   return TETL.extrapolate(aFTS, Jet);
 }
 
-void SignedDecayLength3D::fillDescriptions(edm::ConfigurationDescriptions &descriptions){
+void SignedDecayLength3D::fillDescriptions(edm::ConfigurationDescriptions& descriptions) {
   edm::ParameterSetDescription desc;
   descriptions.addWithDefaultLabel(desc);
 }

@@ -119,7 +119,7 @@ pair<bool, Measurement1D> SignedTransverseImpactParameter::zImpactParameter(cons
   return pair<bool, Measurement1D>(true, Measurement1D(deltaZ, errZ));
 }
 
-void SignedTransverseImpactParameter::fillDescriptions(edm::ConfigurationDescriptions &descriptions){
+void SignedTransverseImpactParameter::fillDescriptions(edm::ConfigurationDescriptions& descriptions) {
   edm::ParameterSetDescription desc;
   descriptions.addWithDefaultLabel(desc);
 }

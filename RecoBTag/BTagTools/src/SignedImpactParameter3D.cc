@@ -191,7 +191,7 @@ pair<double, Measurement1D> SignedImpactParameter3D::distanceWithJetAxis(const T
   return pair<double, Measurement1D>(theDistanceAlongJetAxis, DTJA);
 }
 
-void SignedImpactParameter3D::fillDescriptions(edm::ConfigurationDescriptions &descriptions) {
+void SignedImpactParameter3D::fillDescriptions(edm::ConfigurationDescriptions& descriptions) {
   edm::ParameterSetDescription desc;
   descriptions.addWithDefaultLabel(desc);
 }
