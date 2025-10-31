@@ -12,9 +12,9 @@ using namespace reco;
 
 BTagSkimMC::BTagSkimMC(const ParameterSet& p, const BTagSkimMCCount::Counters* count) : nEvents_(0), nAccepted_(0) {
   verbose = p.getUntrackedParameter<bool>("verbose", false);
-  pthatMin = p.getParameter<double>("pthat_min");
-  pthatMax = p.getParameter<double>("pthat_max");
-  process_ = p.getParameter<string>("mcProcess");
+  pthatMin = p.getUntrackedParameter<double>("pthat_min", 0.0);
+  pthatMax = p.getUntrackedParameter<double>("pthat_max", 0.0);
+  process_ = p.getUntrackedParameter<string>("mcProcess", "");
   if (verbose)
     cout << " Requested:  " << process_ << endl;
 }
