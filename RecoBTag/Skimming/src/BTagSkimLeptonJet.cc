@@ -32,7 +32,7 @@ using namespace std;
 using namespace reco;
 
 BTagSkimLeptonJet::BTagSkimLeptonJet(const edm::ParameterSet& iConfig) : nEvents_(0), nAccepted_(0) {
-  CaloJetInput_ = iConfig.getParameter<InputTag>("CaloJet"); 
+  CaloJetInput_ = iConfig.getParameter<InputTag>("CaloJet");
   MinCaloJetPt_ = iConfig.getUntrackedParameter<double>("MinimumCaloJetPt", 20.0);
   MaxCaloJetEta_ = iConfig.getUntrackedParameter<double>("MaximumCaloJetEta", 3.0);
 
