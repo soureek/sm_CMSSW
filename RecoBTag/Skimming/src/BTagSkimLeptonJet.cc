@@ -59,6 +59,10 @@ BTagSkimLeptonJet::~BTagSkimLeptonJet() {}
 
 /*------------------------------------------------------------------------*/
 
+void BTagSkimLeptonJet::fillDescriptions(edm::ConfigurationDescriptions &descriptions) {
+  edm::ParameterSetDescription desc;
+  descriptions.addWithDefaultLabel(desc);  
+}
 bool BTagSkimLeptonJet::filter(edm::Event& iEvent, const edm::EventSetup& iSetup) {
   nEvents_++;
 

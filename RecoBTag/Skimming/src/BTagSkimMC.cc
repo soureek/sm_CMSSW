@@ -91,6 +91,10 @@ void BTagSkimMC::globalEndJob(const BTagSkimMCCount::Counters* count) {
                                  << std::endl;
 }
 
-#include "FWCore/Framework/interface/MakerMacros.h"
+void BTagSkimMC::fillDescriptions(edm::ConfigurationDescriptions &descriptions) {
+  edm::ParameterSetDescription desc;
+  descriptions.addWithDefaultLabel(desc);
+}
 
+#include "FWCore/Framework/interface/MakerMacros.h"
 DEFINE_FWK_MODULE(BTagSkimMC);
